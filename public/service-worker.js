@@ -1,5 +1,5 @@
 const CACHE_NAME = 'flex-angle-pwa-v1'
-const APP_SHELL = ['.', 'manifest.webmanifest', 'icon.svg', 'posture-guide.svg']
+const APP_SHELL = ['.', 'manifest.webmanifest', 'icon.svg', 'flexibility-planes.png']
 
 function scopedUrl(path) {
   return new URL(path, self.registration.scope).toString()

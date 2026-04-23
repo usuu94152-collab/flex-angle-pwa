@@ -748,8 +748,8 @@ function App() {
               CSV 제출, 기기 저장.
             </p>
           </div>
-          <div className="hero-visual" aria-label="휴대폰을 몸통에 대고 측정하는 안내 그림">
-            <img className="posture-art" src={publicAsset('posture-guide.svg')} alt="" />
+          <div className="hero-visual" aria-label="3면 유연성 측정 기준면 안내 그림">
+            <img className="posture-art" src={publicAsset('flexibility-planes.png')} alt="" />
             <span className="visual-tag">SENSOR READY</span>
             <span className="visual-metric">3 AXIS</span>
           </div>
