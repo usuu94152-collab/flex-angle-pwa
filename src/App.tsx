@@ -178,6 +178,8 @@ const GRADE_LABELS: Record<Grade, string> = {
   caution: '주의',
 }
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 function readStorage<T>(key: string, fallback: T): T {
   try {
     const raw = window.localStorage.getItem(key)
@@ -747,7 +749,7 @@ function App() {
             </p>
           </div>
           <div className="hero-visual" aria-label="휴대폰을 몸통에 대고 측정하는 안내 그림">
-            <img className="posture-art" src="/posture-guide.svg" alt="" />
+            <img className="posture-art" src={publicAsset('posture-guide.svg')} alt="" />
             <span className="visual-tag">SENSOR READY</span>
             <span className="visual-metric">3 AXIS</span>
           </div>

@@ -1,9 +1,16 @@
 const CACHE_NAME = 'flex-angle-pwa-v1'
-const APP_SHELL = ['/', '/manifest.webmanifest', '/icon.svg', '/posture-guide.svg']
+const APP_SHELL = ['.', 'manifest.webmanifest', 'icon.svg', 'posture-guide.svg']
+
+function scopedUrl(path) {
+  return new URL(path, self.registration.scope).toString()
+}
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()),
+    caches
+      .open(CACHE_NAME)
+      .then((cache) => cache.addAll(APP_SHELL.map(scopedUrl)))
+      .then(() => self.skipWaiting()),
   )
 })
 
@@ -29,7 +36,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy))
           return response
         })
-        .catch(() => caches.match('/'))
+        .catch(() => caches.match(scopedUrl('.')))
     }),
   )
 })
