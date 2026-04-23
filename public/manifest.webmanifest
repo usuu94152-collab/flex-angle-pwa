@@ -1,0 +1,20 @@
+{
+  "name": "3면 유연성 측정",
+  "short_name": "Flex Angle",
+  "description": "학생 휴대폰 센서로 전후 굽힘, 좌우 굽힘, 몸통 회전을 기록하는 수업용 PWA",
+  "lang": "ko-KR",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7fbfa",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
