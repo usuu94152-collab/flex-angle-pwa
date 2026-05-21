@@ -1,4 +1,4 @@
-const CACHE_NAME = 'flex-angle-pwa-v1'
+const CACHE_NAME = 'flex-angle-pwa-v2'
 const APP_SHELL = ['.', 'manifest.webmanifest', 'icon.svg', 'flexibility-planes.png']
 
 function scopedUrl(path) {

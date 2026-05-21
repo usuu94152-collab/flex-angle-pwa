@@ -1,7 +1,7 @@
 {
-  "name": "3면 유연성 측정",
+  "name": "유연성 기록",
   "short_name": "Flex Angle",
-  "description": "학생 휴대폰 센서로 전후 굽힘, 좌우 굽힘, 몸통 회전을 기록하는 수업용 PWA",
+  "description": "휴대폰 센서로 전후·좌우·회전 유연성을 측정하고 변화 추이를 기록하는 개인용 PWA",
   "lang": "ko-KR",
   "start_url": ".",
   "scope": ".",
